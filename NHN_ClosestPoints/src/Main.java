@@ -24,7 +24,7 @@ public class Main {
 				min = next - curr;
 				answer = String.format("%d %d\n", curr, next);
 			}
-		}
+		} 
 		//숫자로 저장하여 printf로 출력하는 방법도 있음(더효율적으로 생각)
 		System.out.println(answer);
 	}
