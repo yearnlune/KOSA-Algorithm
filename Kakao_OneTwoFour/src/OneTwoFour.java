@@ -4,7 +4,7 @@ class OneTwoFour {
 		String str = "";
 		int temp = n;
 		int d = 0;
-
+ 
 		while (temp != 0) {
 			d = temp % 3;
 			str += String.valueOf(d);
