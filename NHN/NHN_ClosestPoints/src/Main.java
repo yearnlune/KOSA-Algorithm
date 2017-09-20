@@ -14,7 +14,7 @@ public class Main {
 		String answer = "";
 		while (st.hasMoreTokens()) {
 			list.add(Integer.parseInt(st.nextToken()));
-		}
+		} 
 		Collections.sort(list);
 		int min = Integer.MAX_VALUE;
 		for (int i = 0; i < n - 1; i++) {
