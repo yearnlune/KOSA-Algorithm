@@ -19,7 +19,7 @@ public class Main {
 			int[] temp = new int[sz];
 			int a = 1;
 			int b = -1;
-			for (int i = 1; i < sz; i++) {
+			for (int i = 0; i < sz; i++) {
 				boolean bl = true;
 				for (int j = 0; j < vsz; j++) {
 					if (str.charAt(i) == vowel[j]) {
@@ -34,12 +34,18 @@ public class Main {
 					a = 1;
 				}
 			}
-			
+			boolean bf = false;
+			boolean bs = false;
 			for (int i = 0; i < temp.length; i++) {
+				
 				if (temp[i] == 2) {
+					if (bf) continue;
 					ansf++;
+					bf = true;
 				} else if (temp[i] == -3) {
+					if (bs) continue;
 					anss++;
+					bs = true;
 				}
 			}
 		}
